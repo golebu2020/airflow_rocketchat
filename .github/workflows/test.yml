@@ -1,0 +1,42 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  IMAGE_TAG: ${{ github.ref_name }}
+
+jobs:
+  extract-raw-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract version from tag
+        id: extract_version
+        run: |
+          vtag=${{ env.IMAGE_TAG }}
+          IMAGE_TAG=${vtag//v/}  
+          echo "IMAGE_TAG=$IMAGE_TAG" >> image_tag.txt
+
+      - name: Upload Image Tag Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: image-tag
+          path: image_tag.txt
+  build:
+    needs: [extract-raw-version]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Display Image Tag
+        run: |
+          IMAGE_TAG=$(cat image_tag.txt)
+          echo "IMAGE_TAG=${IMAGE_TAG}" >> $GITHUB_ENV  # Make it available for this job
+          echo "IMAGE_TAGE ==> ${{ env.IMAGE_TAG}}"

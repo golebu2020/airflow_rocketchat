@@ -1,0 +1,35 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  IMAGE_TAG: ${{ github.ref_name }}
+
+jobs:
+  extract-raw-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract version from tag
+        id: extract_version
+        run: |
+          vtag=${{ env.IMAGE_TAG }}
+          IMAGE_TAG=${vtag//v/}  # Remove 'v' from the version tag
+          echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV  # Set the environment variable for future steps
+
+  build:
+    needs: [extract-raw-version]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Display Image Tag
+        run: |
+          echo "Image Tag is $IMAGE_TAG"  # Use $IMAGE_TAG directly

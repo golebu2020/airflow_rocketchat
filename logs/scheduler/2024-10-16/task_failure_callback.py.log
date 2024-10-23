@@ -1,0 +1,115 @@
+[2024-10-16T04:30:17.174+0000] {processor.py:186} INFO - Started process (PID=85988) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:30:17.175+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:30:17.176+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:30:17.176+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:30:17.183+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:30:17.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.020 seconds
+[2024-10-16T04:30:47.404+0000] {processor.py:186} INFO - Started process (PID=86284) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:30:47.405+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:30:47.406+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:30:47.405+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:30:47.413+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:30:47.422+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.023 seconds
+[2024-10-16T04:31:17.834+0000] {processor.py:186} INFO - Started process (PID=86580) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:31:17.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:31:17.835+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:31:17.835+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:31:17.843+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:31:17.852+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.022 seconds
+[2024-10-16T04:31:48.056+0000] {processor.py:186} INFO - Started process (PID=86876) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:31:48.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:31:48.058+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:31:48.058+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:31:48.065+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:31:48.072+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.020 seconds
+[2024-10-16T04:32:18.422+0000] {processor.py:186} INFO - Started process (PID=87172) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:32:18.423+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:32:18.423+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:32:18.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:32:18.430+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:32:18.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.020 seconds
+[2024-10-16T04:32:48.644+0000] {processor.py:186} INFO - Started process (PID=87468) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:32:48.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:32:48.648+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:32:48.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:32:48.658+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:32:48.668+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.031 seconds
+[2024-10-16T04:33:18.990+0000] {processor.py:186} INFO - Started process (PID=87770) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:33:18.991+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:33:18.992+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:33:18.992+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:33:19.000+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:33:19.009+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.024 seconds
+[2024-10-16T04:33:49.233+0000] {processor.py:186} INFO - Started process (PID=88066) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:33:49.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:33:49.234+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:33:49.234+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:33:49.239+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:33:49.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.015 seconds
+[2024-10-16T04:34:19.589+0000] {processor.py:186} INFO - Started process (PID=88362) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:34:19.590+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:34:19.591+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:34:19.590+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:34:19.598+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:34:19.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.022 seconds
+[2024-10-16T04:34:49.861+0000] {processor.py:186} INFO - Started process (PID=88658) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:34:49.862+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:34:49.864+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:34:49.863+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:34:49.873+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:34:49.884+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.029 seconds
+[2024-10-16T04:35:20.173+0000] {processor.py:186} INFO - Started process (PID=88954) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:35:20.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:35:20.175+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:35:20.175+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:35:20.181+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:35:20.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.020 seconds
+[2024-10-16T04:35:50.446+0000] {processor.py:186} INFO - Started process (PID=89256) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:35:50.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:35:50.447+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:35:50.447+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:35:50.454+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:35:50.463+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.021 seconds
+[2024-10-16T04:36:20.604+0000] {processor.py:186} INFO - Started process (PID=89558) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:20.604+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:36:20.606+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:36:20.605+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:20.614+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:20.622+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.023 seconds
+[2024-10-16T04:36:51.040+0000] {processor.py:186} INFO - Started process (PID=89859) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:51.042+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:36:51.043+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:36:51.043+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:51.053+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:51.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.026 seconds
+[2024-10-16T04:36:58.147+0000] {processor.py:186} INFO - Started process (PID=89864) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:58.148+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:36:58.149+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:36:58.149+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:58.161+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:36:58.170+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.025 seconds
+[2024-10-16T04:37:06.179+0000] {processor.py:186} INFO - Started process (PID=90149) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:06.180+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:37:06.181+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:37:06.181+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:06.203+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:06.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.045 seconds
+[2024-10-16T04:37:07.198+0000] {processor.py:186} INFO - Started process (PID=90154) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:07.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:37:07.200+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:37:07.199+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:07.215+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:07.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.033 seconds
+[2024-10-16T04:37:23.488+0000] {processor.py:186} INFO - Started process (PID=90170) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:23.493+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:37:23.495+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:37:23.495+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:23.510+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:23.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.035 seconds
+[2024-10-16T04:37:28.606+0000] {processor.py:186} INFO - Started process (PID=90175) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:28.607+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:37:28.609+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:37:28.609+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:28.641+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:28.650+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.050 seconds
+[2024-10-16T04:37:59.010+0000] {processor.py:186} INFO - Started process (PID=90476) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:59.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:37:59.012+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:37:59.012+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:59.027+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:37:59.036+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.031 seconds
+[2024-10-16T04:38:29.320+0000] {processor.py:186} INFO - Started process (PID=90787) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:38:29.320+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:38:29.321+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:38:29.321+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:38:29.328+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:38:29.337+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.022 seconds
+[2024-10-16T04:38:44.357+0000] {processor.py:186} INFO - Started process (PID=91072) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:38:44.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:38:44.359+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:38:44.359+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:38:44.370+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:38:44.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.029 seconds
+[2024-10-16T04:39:14.649+0000] {processor.py:186} INFO - Started process (PID=91368) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:39:14.651+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-16T04:39:14.652+0000] {logging_mixin.py:190} INFO - [2024-10-16T04:39:14.652+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:39:14.661+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-16T04:39:14.670+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.027 seconds

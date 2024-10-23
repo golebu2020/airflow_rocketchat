@@ -1,0 +1,106 @@
+[2024-10-15T02:06:00.299+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-15T02:06:00.306+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_dag.print_hello_world scheduled__2024-10-15T02:03:00+00:00 [queued]>
+[2024-10-15T02:06:00.309+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_dag.print_hello_world scheduled__2024-10-15T02:03:00+00:00 [queued]>
+[2024-10-15T02:06:00.309+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-15T02:06:00.315+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): print_hello_world> on 2024-10-15 02:03:00+00:00
+[2024-10-15T02:06:00.319+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'simple_dag', 'print_hello_world', 'scheduled__2024-10-15T02:03:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/chinedu_sample.py', '--cfg-path', '/tmp/tmpw2y3czcb']
+[2024-10-15T02:06:00.321+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask print_hello_world
+[2024-10-15T02:06:00.321+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=7754) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-15T02:06:00.322+0000] {standard_task_runner.py:72} INFO - Started process 7755 to run task
+[2024-10-15T02:06:00.348+0000] {task_command.py:467} INFO - Running <TaskInstance: simple_dag.print_hello_world scheduled__2024-10-15T02:03:00+00:00 [running]> on host e73bcfa50a08
+[2024-10-15T02:06:00.379+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_dag' AIRFLOW_CTX_TASK_ID='print_hello_world' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T02:03:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-15T02:03:00+00:00'
+[2024-10-15T02:06:00.380+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-15T02:06:00.380+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-15T02:06:00.380+0000] {logging_mixin.py:190} INFO - Current task name:print_hello_world state:running start_date:2024-10-15 02:06:00.306756+00:00
+[2024-10-15T02:06:00.380+0000] {logging_mixin.py:190} INFO - Dag name:simple_dag and current dag run status:running
+[2024-10-15T02:06:00.380+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-15T02:06:00.381+0000] {logging_mixin.py:190} INFO - Hello, Airflow!
+[2024-10-15T02:06:00.381+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-15T02:06:00.384+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-15T02:06:00.385+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=print_hello_world, run_id=scheduled__2024-10-15T02:03:00+00:00, execution_date=20241015T020300, start_date=20241015T020600, end_date=20241015T020600
+[2024-10-15T02:06:00.385+0000] {taskinstance.py:1563} INFO - Executing callback at index 0: send_rocketchat_success_alert
+[2024-10-15T02:06:00.385+0000] {logging_mixin.py:190} INFO - Something happening
+[2024-10-15T02:06:00.387+0000] {taskinstance.py:1567} ERROR - Error in callback at index 0: send_rocketchat_success_alert
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 398, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.12/http/client.py", line 1091, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 236, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff7b92d7c0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /api/v1/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7b92d7c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1565, in _run_finished_callback
+    callback(context)
+  File "/opt/airflow/dags/chinedu_sample.py", line 17, in send_rocketchat_success_alert
+    rocket = RocketChat('golebu2020', 'Nedu123@#', server_url='http://127.0.0.1:3000')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/rocketchat_API/APISections/base.py", line 36, in __init__
+    self.login(user, password)  # skipcq: PTC-W1006
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/rocketchat_API/APISections/base.py", line 159, in login
+    login_request = self.req.post(
+                    ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /api/v1/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7b92d7c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-10-15T02:06:00.393+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-15T02:06:00.393+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-15T02:06:00.393+0000] {logging_mixin.py:190} INFO - Dag name:simple_dag queued_at:2024-10-15 02:06:00.083855+00:00
+[2024-10-15T02:06:00.393+0000] {logging_mixin.py:190} INFO - Task hostname:e73bcfa50a08 operator:PythonOperator
+[2024-10-15T02:06:00.425+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-15T02:06:00.433+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-15T02:06:00.434+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

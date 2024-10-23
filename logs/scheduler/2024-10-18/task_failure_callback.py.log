@@ -1,0 +1,5 @@
+[2024-10-18T00:07:57.422+0000] {processor.py:186} INFO - Started process (PID=173) to work on /opt/airflow/dags/task_failure_callback.py
+[2024-10-18T00:07:57.423+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/task_failure_callback.py for tasks to queue
+[2024-10-18T00:07:57.426+0000] {logging_mixin.py:190} INFO - [2024-10-18T00:07:57.426+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/task_failure_callback.py
+[2024-10-18T00:07:57.441+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/task_failure_callback.py
+[2024-10-18T00:07:57.450+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/task_failure_callback.py took 0.034 seconds

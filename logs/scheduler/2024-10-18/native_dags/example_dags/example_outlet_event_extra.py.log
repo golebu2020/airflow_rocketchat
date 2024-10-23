@@ -1,0 +1,4 @@
+[2024-10-18T00:07:59.526+0000] {processor.py:186} INFO - Started process (PID=417) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2024-10-18T00:07:59.528+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2024-10-18T00:07:59.531+0000] {logging_mixin.py:190} INFO - [2024-10-18T00:07:59.531+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2024-10-18T00:07:59.951+0000] {logging_mixin.py:190} INFO - [2024-10-18T00:07:59.951+0000] {process_utils.py:266} INFO - Waiting up to 5 seconds for processes to exit...

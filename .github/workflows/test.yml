@@ -1,0 +1,30 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  IMAGE_TAG: ${{ github.ref_name }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Extract version from tag
+        run: |
+          vtag=${{ env.IMAGE_TAG }}
+          IMAGE_TAG=${vtag//v}
+          echo "Image--> $IMAGE_TAG"
+      # echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV  # Set the environment variable
+      # - name: Display Image Tag
+      #   run: |
+      #     echo "Image Tag is ${{ env.IMAGE_TAG }}"
